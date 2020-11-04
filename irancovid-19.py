@@ -19,7 +19,7 @@ total_cases_per_million = int(iran_casses['total_cases_per_million'])
 total_deaths_per_million = int(iran_casses['total_deaths_per_million'])
 population = int(iran_casses['population'])
 
-print(json.dumps({
+pr = json.dumps({
     'confirmed': confirmed,
     'new_cases': new_cases,
     'deaths': deaths,
@@ -32,4 +32,6 @@ print(json.dumps({
     'total_cases_per_million': total_cases_per_million,
     'total_deaths_per_million': total_deaths_per_million,
     'population': population
-    }))
+})
+
+print(pr)
